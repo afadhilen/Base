@@ -23,7 +23,7 @@
     <link href="script/custom.css" rel="stylesheet" />
 </head>
 
-<body class="index-page">
+<body class="index-page" id="main">
     <!-- <nav class="navbar navbar-success navbar-transparent navbar-fixed-top navbar-color-on-scroll"> -->
     <nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll">
         <div class="container">
@@ -245,10 +245,12 @@
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
 }
 </script>
 
