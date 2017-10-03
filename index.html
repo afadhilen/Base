@@ -25,16 +25,16 @@
 
 <body class="index-page" id="main">
     <!-- <nav class="navbar navbar-success navbar-transparent navbar-fixed-top navbar-color-on-scroll"> -->
-    <nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+    <nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll" id="navbar1">
         <div class="container">
             <div class="collapse navbar-collapse" id="navigation-index">
                 <ul class="nav navbar-nav">
                 <li>
                     <div id="mySidenav" class="sidenav">
                       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                      <a href="#">Kompetensi Dasar</a>
-                      <a href="#">Materi</a>
-                      <a href="#">Kesimpulan</a>
+                      <a href="#kp">KP</a>
+                      <a href="#materi">Materi</a>
+                      <a href="#kesimpulan">Kesimpulan</a>
                       <a href="#">Dll</a>
                     </div>
                     <h4 style="cursor:pointer; line-height: 1.2em;" onclick="openNav()">&#9776;</h4>
@@ -74,7 +74,7 @@
         </div>
 
         <div class="main main-raised">
-            <div class="section section-basic">
+            <div class="section section-basic" id="kp">
                 <div class="container">
                     <div class="title">
                         <h1>Kompetensi Pencapaian</h1>
@@ -166,10 +166,10 @@
         <br>
 
         <div class="main main-raised">
-            <div class="section section-basic" id="materi">
+            <div class="section section-basic" id="kesimpulan">
                 <div class="container">
                     <div class="title">
-                        <h1>Digabung</h1>
+                        <h1>Kesimpulan</h1>
                     </div>
                     <br>
                     <ul class="nav nav-pills" role="tablist">
@@ -246,12 +246,42 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("navbar1").classList.remove('navbar-fixed-top');
+    document.getElementById("navbar1").setAttribute("style", "background-color: #a37ebf; margin-bottom: 0px;");
+    //#9c27b0
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("navbar1").classList.add('navbar-fixed-top');
+    document.getElementById("navbar1").removeAttribute("style", "background-color: #a37ebf; margin-bottom: 0px;");
 }
 </script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </html>
