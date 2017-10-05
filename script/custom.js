@@ -50,4 +50,9 @@ $(document).ready(function () {
         $(dataExpand).show('slow');
     });
 
+    $(".modal-link").off().on("click", function(){
+       var element = $(this).closest('.modal');
+       element.modal('toggle');
+    });
+
 });
