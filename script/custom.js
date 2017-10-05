@@ -40,6 +40,13 @@ $(document).ready(function () {
                 window.location.hash = hash;
             });
         } // End if
+
+        var element = $(this).closest('.modal');
+        if(element.length){
+            element.modal('toggle');
+        }
+
+        console.log(element);
     });
 
     $("#rangkuman-nav, #evaluasi-nav").off().on("click", function(){
@@ -49,10 +56,4 @@ $(document).ready(function () {
         $('.nav-pill-details').hide();
         $(dataExpand).show('slow');
     });
-
-    $(".modal-link").off().on("click", function(){
-       var element = $(this).closest('.modal');
-       element.modal('toggle');
-    });
-
 });
