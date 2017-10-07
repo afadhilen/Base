@@ -49,3 +49,22 @@ a, a:hover {
     color: #F44336;
 }
 
+.modal-dialog#materi {
+    width: 60%;
+    height: 50%;
+}
+
+.modal-content#materi {
+    height: auto;
+    min-height: 60%;
+    border-radius: 5px;
+}
+
+table td{
+    padding-right: 10px
+}
+
+img {
+    border-radius: 5px;
+}
+

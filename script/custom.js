@@ -45,8 +45,6 @@ $(document).ready(function () {
         if(element.length){
             element.modal('toggle');
         }
-
-        console.log(element);
     });
 
     $("#rangkuman-nav, #evaluasi-nav").off().on("click", function(){
@@ -58,4 +56,8 @@ $(document).ready(function () {
     });
 
     $('[data-toggle="popover"]').popover();
+
+    $('.expand-materi').off().on('click', function(){
+        console.log('test');
+    });
 });
