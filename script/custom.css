@@ -50,7 +50,7 @@ a, a:hover {
 }
 
 .modal-dialog#materi {
-    width: 60%;
+    width: 80%;
     height: 50%;
 }
 
@@ -66,5 +66,11 @@ table td{
 
 img {
     border-radius: 5px;
+}
+
+#myCarousel {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 

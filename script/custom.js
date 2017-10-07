@@ -58,9 +58,22 @@ $(document).ready(function () {
     $('[data-toggle="popover"]').popover();
 
     $('.expand-materi').off().on('click', function(e){
-    
-            $("#klasifikasi-pinus").toggle("slow");
-        
+        e.preventDefault();
+        var element = '#' + $(this).data('id');
+
+        $(element).toggle("slow");
+    });
+
+    $('.carousel-control').off().on('click', function(e){
+        e.preventDefault();
+    })
+
+    $('html').on('mouseup', function(e) {
+        if(!$(e.target).closest('.popover').length) {
+            $('.popover').each(function(){
+                $(this.previousSibling).popover('hide');
+            });
+        }
     });
 
 });
