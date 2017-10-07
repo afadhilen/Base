@@ -56,4 +56,6 @@ $(document).ready(function () {
         $('.nav-pill-details').hide();
         $(dataExpand).show('slow');
     });
+
+    $('[data-toggle="popover"]').popover();
 });
