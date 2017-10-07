@@ -57,7 +57,10 @@ $(document).ready(function () {
 
     $('[data-toggle="popover"]').popover();
 
-    $('.expand-materi').off().on('click', function(){
-        console.log('test');
+    $('.expand-materi').off().on('click', function(e){
+    
+            $("#klasifikasi-pinus").toggle("slow");
+        
     });
+
 });
