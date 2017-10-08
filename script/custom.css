@@ -74,3 +74,34 @@ img {
     overflow: hidden;
 }
 
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>li>a:hover, 
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #563d7c;                 
+    text-decoration: none;          
+    background-color: transparent;  
+    border-left-color: #563d7c; 
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, 
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
