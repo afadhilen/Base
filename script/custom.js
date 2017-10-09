@@ -20,6 +20,14 @@ $(document).ready(function () {
         document.getElementById("navbar1").classList.add('navbar-fixed-top');
         document.getElementById("navbar1").removeAttribute("style", "background-color: #a37ebf; margin-bottom: 0px;");
     }
+
+    opensideNav = function() {
+        document.getElementById("mySidenav1").style.width = "250px";
+    }
+
+    closesideNav = function() {
+        document.getElementById("mySidenav1").style.width = "0";
+    }
     
     $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
