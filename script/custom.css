@@ -49,6 +49,10 @@ a, a:hover {
     color: #F44336;
 }
 
+.modal-dialog{
+    border-radius: 10px;
+}
+
 .modal-dialog#materi {
     width: 80%;
     height: 50%;
@@ -56,8 +60,7 @@ a, a:hover {
 
 .modal-content#materi {
     height: auto;
-    min-height: 60%;
-    border-radius: 5px;
+    min-height: 60%;  
 }
 
 table td{
@@ -104,4 +107,12 @@ img {
 .bs-docs-sidebar .nav>.active:hover>a,
 .bs-docs-sidebar .nav>.active:focus>a {
     font-weight: 700;
+}
+
+.section-basic#kesimpulan {
+    height: 750px;
+}
+
+.section-notifications:last-child{
+    padding: 10px 0;
 }
