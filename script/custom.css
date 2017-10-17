@@ -149,3 +149,5 @@ img {
 .section-notifications:last-child{
     padding: 10px 0;
 }
+
+.carousel-indicators li { visibility: hidden; }

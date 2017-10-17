@@ -72,6 +72,28 @@ $(document).ready(function () {
         $(element).toggle("slow");
     });
 
+    $('.slide-materi').off().on('click', function(e){
+        e.preventDefault();
+        var element = '#' + $(this).data('id');
+        var parent = $(this).closest('#materi-overview');
+
+        // $(parent).toggle("slow");
+        // $(element).toggle("slow");
+        $(parent).toggle();
+        $(element).toggle();
+    });
+
+    $('.back-materi').off().on('click', function(e){
+        e.preventDefault();
+        var element = '#' + $(this).data('id');
+        var parent = $(this).closest('.modal-content').siblings("#materi-overview");
+        
+        // $(parent).toggle("slow");
+        // $(element).toggle("slow");
+        $(parent).toggle();
+        $(element).toggle();
+    });
+
     $('.carousel-control').off().on('click', function(e){
         e.preventDefault();
     })
