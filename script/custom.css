@@ -96,6 +96,16 @@ a, a:hover {
     min-height: 60%;  
 }
 
+.modal-dialog#profil {
+    width: 70%;
+    height: 50%;
+}
+
+.modal-content#profil {
+    height: auto;
+    min-height: 60%;  
+}
+
 table td{
     padding-right: 10px
 }
@@ -151,3 +161,9 @@ img {
 }
 
 .carousel-indicators li { visibility: hidden; }
+
+.popover{
+    width:auto!important; 
+    max-width: none;
+    border-radius: 10px;
+}

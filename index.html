@@ -45,11 +45,11 @@
                           <a href="#kesimpulan">Evaluasi</a>
                           <a href="#referensi">Referensi</a>
                       </div> -->
-                        
+
                     </li>
                     <li>
                         <a rel="tooltip" onclick="openNav()" class="btn btn-white btn-simple btn-just-icon">
-                            Menu
+                            <!-- Menu -->
                         </a>
                     </li>
                 </ul>
@@ -138,13 +138,13 @@
                                 <div class="nav-tabs-wrapper">
                                     <ul class="nav nav-tabs" data-tabs="tabs">
                                         <li class="active">
-                                            <a href="#" data-toggle="tab">Spermatophyta </a>
+                                            <a href="#spermatophyta" data-toggle="tab">Spermatophyta </a>
                                         </li>
                                         <li>
-                                            <a href="gymnospermae.html">Gymnospermae</a>
+                                            <a href="#gymnospermae" data-toggle="tab">Gymnospermae</a>
                                         </li>
                                         <li>
-                                            <a href="angiouspermae.html">Angiouspermae
+                                            <a href="#angiouspermae" data-toggle="tab">Angiouspermae
                                                 <div class="ripple-container"></div>
                                             </a>
                                         </li>
@@ -154,7 +154,19 @@
                         </div>
                         <div class="content">
                             <div class="tab-content text-center">
-                                <div class="tab-pane active" id="gymnospermae">
+                                <div class="tab-pane active fade in" id="spermatophyta">
+                                    <p>
+                                        Spermatophyta berasal dari bahasa Yunani,
+                                        <b>
+                                            <i>Sperma</i>
+                                        </b> atau biji dan
+                                        <b>
+                                            <i>phyton</i>
+                                        </b> atau tumbuhan
+                                        <a href="spermatophyta.html">Read More...</a>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade in" id="gymnospermae">
                                     <p> Gymnospermae atau tumbuhan berbiji terbuka ini berasal dari bahasa Yunani yaitu
                                         <b>
                                             <i>gymnos</i>
@@ -165,7 +177,7 @@
                                         <a href="gymnospermae.html">Read More...</a>
                                     </p>
                                 </div>
-                                <div class="tab-pane" id="angiouspermae">
+                                <div class="tab-pane fade in" id="angiouspermae">
                                     <p> Angiouspermae atau tumbuhan berbiji tertutup ini berasal dari bahasa Yunani yaitu
                                         <b>
                                             <i>angeion</i>
@@ -318,18 +330,71 @@
 
     <!-- Sart Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+        <div class="modal-dialog" id="profil">
+            <div class="modal-content" id="profil">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                         <i class="material-icons">clear</i>
                     </button>
-                    <h3 class="modal-title">Profil Peneliti</h3>
+                    <h2 class="modal-title">Profil Peneliti</h2>
                 </div>
                 <div class="modal-body">
-                    <div class="team-player">
-                        <img src="assets/images/profil.png" alt="Thumbnail Image" height="100%" width="100%">
+                    <div align="center" class="team-player">
+                        <img src="assets/images/profil.jpg" alt="Thumbnail Image" height="500px" width="700px">
                     </div>
+                    <br>
+                    <h2 class="modal-title">Profil Pembimbing</h2>
+                    <div align="center" class="team-player">
+                        <br>
+                        <table>
+                            <tr>
+                                <td align="center" width="270px">
+                                    <img src="assets/images/pembimbing_1.jpg" style='width:350px; height:400px' alt="">
+                                </td>
+                                <td align="center" width="270px">
+                                    <img src="assets/images/pembimbing_2.jpg" style='width:350px; height:400px' alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h4>Prof. Dr. Dra. Hj. Asni Johari, M.Si.</h4>
+                                </td>
+                                <td align="center">
+                                    <h4>Ali Sadikin, S.Pd.I., M.Pd</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <h4>NIP. 196811081993032002</h4>
+                                </td>
+                                <td align="center">
+                                    <h4>NIP. 198501212008121002</h4>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <h2 class="modal-title">Kompetensi Inti</h2>
+                    <p>
+                        <h4>
+                            <ol>
+                                <li>Menghayati dan mengamalkan ajaran agama yang dianutunya.</li>
+                                <li>Menghayati dan mengamalkan perilaku jujur, disiplin, tanggung jawab, peduli (gotong royong),
+                                    kerja sama, toleran, damai, santun, responsive, dan pro aktif, dan menunjukan sikap sebagai
+                                    bagian dari solusi atas berbagai permasalahan dalam berintegrasi secara efektif dengan
+                                    lingkungan sosial dan akan serta dalam menempatkan diri sebagai cerminan bangsa dalam
+                                    pergaulan dunia. </li>
+                                <li>Memahami, menerapkan, dan menganalisis pengetahuan faktual, konseptual, prosedural, dan metakognitif
+                                    berdasarkan rasa ingin tahunya tentang ilmu pengetahuan, teknologi, seni, budaya, dan
+                                    humaniora dengan wawasan kemanusiaan, kebangsaan, kenegaraan, dan peradaban terkait penyebab
+                                    fenomena dan kejadian, serta menerapkan pengetahuan prosedural pada bidang kajian yang
+                                    spesifik sesuai dengan bakat dan minatnya untuk memecahkan masalah.</li>
+                                <li>Mengolah, menalar, menyaji, dan menciptakan dalam ranah abstrak terkait dengan pengembangan
+                                    dari yang dipelajarinya di sekolah secara mandiri serta bertindak secara efektif dan
+                                    kreatif dan mampu menggunakan metode sesuai kaidah keilmuan.</li>
+                            </ol>
+                        </h4>
+                    </p>
                 </div>
                 <div class="modal-footer">
                 </div>
