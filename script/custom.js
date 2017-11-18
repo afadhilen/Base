@@ -30,7 +30,7 @@ $(document).ready(function () {
     }
     
     $("a").on('click', function (event) {
-        // Make sure this.hash has a value before overriding default behavior
+        // Make sure this.hash has a value before overriding default behavior        
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
@@ -54,7 +54,7 @@ $(document).ready(function () {
             element.modal('toggle');
         }
     });
-
+    
     $("#rangkuman-nav, #evaluasi-nav").off().on("click", function(){
         var dataExpand = '#' + $(this).data("expand");
 

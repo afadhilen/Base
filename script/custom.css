@@ -167,3 +167,13 @@ img {
     max-width: none;
     border-radius: 10px;
 }
+
+.tooltip-inner{
+    width:auto!important; 
+    max-width: none;
+    border-radius: 10px;
+}
+
+.span-tooltip{
+    color: #F44336;
+}
