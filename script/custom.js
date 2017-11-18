@@ -10,7 +10,7 @@ $(document).ready(function () {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
         document.getElementById("navbar1").classList.remove('navbar-fixed-top');
-        document.getElementById("navbar1").setAttribute("style", "background-color: #a37ebf; margin-bottom: 0px;");
+        document.getElementById("navbar1").setAttribute("style", "background-color: #4caf50; margin-bottom: 0px;");
         //#9c27b0
     }
 
@@ -18,7 +18,7 @@ $(document).ready(function () {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
         document.getElementById("navbar1").classList.add('navbar-fixed-top');
-        document.getElementById("navbar1").removeAttribute("style", "background-color: #a37ebf; margin-bottom: 0px;");
+        document.getElementById("navbar1").removeAttribute("style", "background-color: #4caf50; margin-bottom: 0px;");
     }
 
     opensideNav = function() {
