@@ -170,76 +170,28 @@
                     <div class="title">
                         <h1>Klasifikasi Gymnospermae</h1>
                     </div>
-                    <div>
-                        <h2>1. Tumbuhan Pinophyta (Pinus)</h2>
-                        <h4>
-                            <p>
-                                Dikenal sebagai konifer diduga tumbuh melimpah pada masa Mesozoikum. Pada umumnya berupa pohon yang tinggi dengan daun tebal,
-                                kecil
-                                <a data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_daun_jarum.jpg' style='width:250px; height:300px'>">berbentuk jarum</a>
-                                atau sisik dan selalu tampak berwarna hijau Conifer pada umumnya berumah satu kerena memiliki dua jenis konus yaitu jantan
-                                dan betina. Konus jantan berurutan lebih kecil dibanding konus betina. Biji berkembang biak
-                                didalam
-                                <a data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_runjung.jpg' style='width:250px; height:300px'>">runjung</a>. Contoh:
-                                <b>
-                                    <a data-toggle="modal" data-target="#pinus-modal" href="#">Pinus (Pinus sp.)</a>
-                                </b>
-                            </p>
-                        </h4>
-                    </div>
-
-                    <div>
-                        <h2>2. Ginkgophyta</h2>
-                        <h4>
-                            <p>
-                                Anggota divisio ini yang masih ada adalah Ginkgo biloba (Ginko) yang berasal dari Cina. Ginkgo merupakan pohon besar, dapat
-                                mencapai ketinggian lebih dari 30 meter. Daunnya bertangkai panjang dan lebar berbentuk seperti
-                                kipas, dengan belahan yang berlekuk dalam. Tulang daun berbentuk menggarpu. Ginko merupakan
-                                tumbuhan Gymnospermae yang meranggas, berumah dua, biji keras berwarna kekuningan, berukuran
-                                sebesar kelereng, berbau tidak enak, contoh spesies
-                                <b>
-                                    <a data-toggle="modal" data-target="#ginkgo-modal" href="#">Ginkgo biloba</a>.
-                                </b>
-                            </p>
-                        </h4>
-                    </div>
-
-                    <div>
-                        <h2>3. Cycadophyta (pakis)</h2>
-                        <h4>
-                            <p>
-                                Golongan sikas ditemukan di daerah tropis hingga sub-tropis. Ciri yang khas untuk tumbuhan ini adalah batang yang tidak bercabang,
-                                daun majemuk, seperti kulit, tersusun sebagai tajuk di puncak batang yang memanjang. Seluruh
-                                anggotanya berumah dua. Memiliki struktur daun yang
-                                <a data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_daun_pita.jpg' style='width:250px; height:300px'>">berbentuk pita</a>
-                                dengan tulang daun menyirip ada daun muda yang mengulung. Memiliki akar serabut dan
-                                <a data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_strobilus_jantan.jpg' style='width:250px; height:300px'>">strobilus jantan</a>
-                                halus dan kecil sedangkan
-                                <a data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_strobilus_betina.jpg' style='width:250px; height:300px'>">strobilus betina</a>
-                                lebih besar dan berkayu contoh
-                                <b>
-                                    <a data-toggle="modal" data-target="#pakis-modal" href="#">pakis haji (Cycas rumphii)</a>.
-                                </b>
-                            </p>
-                        </h4>
-                    </div>
-
-                    <div>
-                        <h2>4. Gnetophyta</h2>
-                        <h4>
-                            <p>
-                                Merupakan tumbuhan berbentuk pohon atau liana dengan batang bercabang atau tidak bercabang. Memiliki pembuluh kayu yang mengatur
-                                air pada bagian xilemnya. tumbuhan
-                                <a data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_bunga_rumah_dua.jpg' style='width:250px; height:300px'>">berumah dua</a>
-                                atau berkelamin tunggal. Daun tunggal berbentuk lembaran dengan susunan daun berhadapan dan
-                                <a data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_tulang_daun_sirip.jpg' style='width:250px; height:300px'>">tulang daun menyirip</a>. Contoh spesies
-                                <b>
-                                    <a data-toggle="modal" data-target="#melinjo-modal" href="#">Melinjo (Gnetum gnemon)</a>.
-                                </b>
-                            </p>
-                        </h4>
-                    </div>
-
+                    <ul class="nav nav-pills nav-stacked nav-pills-success" style="margin-left:35px">
+                        <li class="active">
+                            <button class="btn btn-danger btn-round btn-block" data-toggle="modal" data-target="#pinus">
+                                <i> Pinophyta </i> (Pinus)
+                            </button>
+                        </li>
+                        <li class="active">
+                            <button class="btn btn-info btn-round btn-block" data-toggle="modal" data-target="#ginkgo">
+                                <i> Ginkgophyta </i> 
+                            </button>
+                        </li>
+                        <li class="active">
+                            <button class="btn btn-warning btn-round btn-block" data-toggle="modal" data-target="#cycadophyta">
+                                <i> Cycadophyta </i> (pakis)
+                            </button>
+                        </li>
+                        <li class="active">
+                            <button class="btn btn-success btn-round btn-block" data-toggle="modal" data-target="#gnetophyta">
+                                <i> Gnetophyta </i> (suku terung-terungan)
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -284,11 +236,39 @@
 
     <!-- Modal -->
     <!-- All modal goes to here -->
-    <div class="modal fade" id="pinus-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pinus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" id="materi">
-            <div class="modal-content" id="materi">
+            <div class="modal-content" id="materi-overview">
                 <div class="modal-header">
                     <h2 class="modal-title">Pinus sp.</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Dikenal sebagai konifer diduga tumbuh melimpah pada masa Mesozoikum. Pada umumnya berupa pohon yang tinggi dengan daun tebal,
+                    kecil
+                    <span class="span-tooltip" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_daun_jarum.jpg' style='width:250px; height:300px'>">berbentuk jarum</span>
+                    atau sisik dan selalu tampak berwarna hijau Conifer pada umumnya berumah satu kerena memiliki dua jenis konus yaitu jantan
+                    dan betina. Konus jantan berurutan lebih kecil dibanding konus betina. Biji berkembang biak
+                    didalam
+                    <span class="span-tooltip" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_runjung.jpg' style='width:250px; height:300px'>">runjung</span>. Contoh:
+                    <b>
+                        <a class="slide-materi" data-id="materi-pinus">Pinus (Pinus sp.)</a>
+                    </b></h4>
+
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h4>Video</h4>
+                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Sk3IkoUoK88">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content" id="materi-pinus" style="display:none">
+                <div class="modal-header">
+                    <h2 class="modal-title">Pinus sp.</h2>
+                    <h3>
+                        <a class="back-materi" data-id="materi-pinus">Kembali</a>
+                    </h3>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -392,13 +372,39 @@
         </div>
     </div>
 
-    <div class="modal fade" id="ginkgo-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ginkgo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" id="materi">
-            <div class="modal-content" id="materi">
+            <div class="modal-content" id="materi-overview">
+                <div class="modal-header">
+                    <h2 class="modal-title">Ginkgophyta</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Anggota divisio ini yang masih ada adalah Ginkgo biloba (Ginko) yang berasal dari Cina. Ginkgo merupakan pohon besar, dapat
+                    mencapai ketinggian lebih dari 30 meter. Daunnya bertangkai panjang dan lebar berbentuk seperti
+                    kipas, dengan belahan yang berlekuk dalam. Tulang daun berbentuk menggarpu. Ginko merupakan
+                    tumbuhan Gymnospermae yang meranggas, berumah dua, biji keras berwarna kekuningan, berukuran
+                    sebesar kelereng, berbau tidak enak, contoh spesies
+                    <b>
+                        <a class="slide-materi" data-id="materi-ginkgo" href="#">Ginkgo biloba</a>.
+                    </b></h4>
+
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h4>Video</h4>
+                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Sk3IkoUoK88">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content" id="materi-ginkgo" style="display:none"> 
                 <div class="modal-header">
                     <h2 class="modal-title">
                         <i>Ginkgo biloba</i>
                     </h2>
+                    <h3>
+                        <a class="back-materi" data-id="materi-ginkgo">Kembali</a>
+                    </h3>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -493,13 +499,43 @@
         </div>
     </div>
 
-    <div class="modal fade" id="pakis-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="cycadophyta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" id="materi">
-            <div class="modal-content" id="materi">
+            <div class="modal-content" id="materi-overview">
+                <div class="modal-header">
+                    <h2 class="modal-title">Cycadophyta (pakis)</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Golongan sikas ditemukan di daerah tropis hingga sub-tropis. Ciri yang khas untuk tumbuhan ini adalah batang yang tidak bercabang,
+                    daun majemuk, seperti kulit, tersusun sebagai tajuk di puncak batang yang memanjang. Seluruh
+                    anggotanya berumah dua. Memiliki struktur daun yang
+                    <span class="span-tooltip" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_daun_pita.jpg' style='width:250px; height:300px'>">berbentuk pita</span>
+                    dengan tulang daun menyirip ada daun muda yang mengulung. Memiliki akar serabut dan
+                    <span class="span-tooltip" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_strobilus_jantan.jpg' style='width:250px; height:300px'>">strobilus jantan</span>
+                    halus dan kecil sedangkan
+                    <span class="span-tooltip" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_strobilus_betina.jpg' style='width:250px; height:300px'>">strobilus betina</span>
+                    lebih besar dan berkayu contoh
+                    <b>
+                        <a class="slide-materi" data-id="materi-cycas">pakis haji (Cycas rumphii)</a>.
+                    </b></h4>
+
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h4>Video</h4>
+                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Sk3IkoUoK88">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-content" id="materi-cycas" style="display:none">
                 <div class="modal-header">
                     <h2 class="modal-title">
                         <i>Cycas rumphii</i>
                     </h2>
+                    <h3>
+                        <a class="back-materi" data-id="materi-cycas">Kembali</a>
+                    </h3>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -534,7 +570,7 @@
                                 </a>
                             </div>
                             <h4>
-                                <a class="expand-materi" data-id="klasifikasi-pakis">Cycas rumphii(pakis haji)</a> di daerah Kantor Gubernur, Telanaipura (dokumentasi pribadi,15/08/2017)
+                                <a class="expand-materi" data-id="klasifikasi-pakis">Cycas rumphii (pakis haji)</a> di daerah Kantor Gubernur, Telanaipura (dokumentasi pribadi,15/08/2017)
                             </h4>
                         </div>
                         <div class="col-md-6">
@@ -600,9 +636,32 @@
         </div>
     </div>
 
-    <div class="modal fade" id="melinjo-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="gnetophyta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" id="materi">
-            <div class="modal-content" id="materi">
+            <div class="modal-content" id="materi-overview">
+                <div class="modal-header">
+                    <h2 class="modal-title">Gnetophyta</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Merupakan tumbuhan berbentuk pohon atau liana dengan batang bercabang atau tidak bercabang. Memiliki pembuluh kayu yang mengatur
+                    air pada bagian xilemnya. tumbuhan
+                    <span class="span-tooltip" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_bunga_rumah_dua.jpg' style='width:250px; height:300px'>">berumah dua</span>
+                    atau berkelamin tunggal. Daun tunggal berbentuk lembaran dengan susunan daun berhadapan dan
+                    <span class="span-tooltip" data-toggle="popover" data-placement="top" data-html="true" data-content="<img src='assets/images/gymnospermae/gymno_tulang_daun_sirip.jpg' style='width:250px; height:300px'>">tulang daun menyirip</span>. Contoh spesies
+                    <b>
+                        <a class="slide-materi" data-id="materi-gnetum">Melinjo (Gnetum gnemon)</a>.
+                    </b></h4>
+
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h4>Video</h4>
+                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/Sk3IkoUoK88">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>z
+            <div class="modal-content" id="materi-gnetum" style="display:none">
                 <div class="modal-header">
                     <h2 class="modal-title">
                         <i>Gnetum gnemon</i>
