@@ -109,4 +109,16 @@ $(document).ready(function () {
         }
     });
 
+    $('.hitung-nilai').on("click", function(e){
+        e.preventDefault();
+        var count = $('input[type="radio"][value="1"]:checked').length;
+        var total_point = count * 5;
+        if(total_point >= 65){
+            swal('Good job!', 'You have scored '+ total_point + ' !', 'success');
+        }
+        else{
+            swal('Oops...!', 'You have scored ' + total_point + ' !', 'error');
+        }
+    });
+
 });

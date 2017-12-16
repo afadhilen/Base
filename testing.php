@@ -22,9 +22,9 @@
     <link href="script/custom.css" rel="stylesheet" />
 </head>
 <body>
-	<?php
+	<!-- <?php
 		echo "<script> swal('Good job!!', 'You clicked the button!', 'success')</script>";
-	?>
+	?> -->
     <button onclick="swal('Good job!','You clicked the button!','success');">Test</button>
 </body>
 <script src="themes/assets/js/jquery.min.js" type="text/javascript"></script>
