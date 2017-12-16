@@ -30,29 +30,32 @@ $(document).ready(function () {
     }
     
     $("a").on('click', function (event) {
-        // Make sure this.hash has a value before overriding default behavior        
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+        if(!$(this).hasClass('nav-index')){
+            // Make sure this.hash has a value before overriding default behavior        
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-            // Store hash
-            var hash = this.hash;
+                // Store hash
+                var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function () {
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
 
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
 
-        var element = $(this).closest('.modal');
-        if(element.length){
-            element.modal('toggle');
+            var element = $(this).closest('.modal');
+            if(element.length){
+                element.modal('toggle');
+            }
         }
+        
     });
     
     $("#rangkuman-nav, #evaluasi-nav").off().on("click", function(){
